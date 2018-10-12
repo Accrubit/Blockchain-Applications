@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery -->
+    <script src=https://code.jquery.com/jquery-3.3.1.min.js></script>
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <!-- Crypto.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+    <script src="verify.js"></script>
+    <title>Blockchain</title>
+  </head>
+
+  <body>
+
+    <section class="hero-body">
+      <h1 class=title>Blockchain in JavaScript</h1>
+      <h2 class="title is-4">Create blockchain</h2>
+      Mining Difficulty:
+      <input class="input" placeholder="difficulty of mining" type="number" value="1">
+      <button class="button is-info" onclick="createChain()">Create</button>
+    </section>
+
+
+    <section class="hero-body">
+      <h2 class="title is-4">Blockchain status</h2>
+      <button onclick="showChain()" class="button is-info">Show blockchain</button>
+      <button onclick="checkValid()" class="button is-link">Check valid
+      </button>
+      <div></div>
+      <pre>// Click show blockchain to display it</pre>
+    </section>
+
+
+    <section class="hero-body">
+      <h2 class="title is-4">Add new block</h2>
+      Data:
+      <input class=input placeholder=data value="Hi :)">
+      <button class="button is-primary" onclick='addBlock()'>Add</button>
+      <div></div>
+    </section>
+
+
+    <section class='hero-body'>
+      <h2 class="title is-4">Corrupt blockchain</h2>
+      <pre id=cor>
+      (CHAIN.chain[0].hash = '');
+      </pre>
+      <button class="button is-warning" onclick="run()">Corrupt it!</button>
+      <div></div>
+    </section>
+
+
+    <section class="hero-body">
+      <h2 class="title is-4">Proof Of Work</h2>
+      <p>Log of mined blocks</p>
+      <pre id=log>
+      </pre>
+    </section>
+
+  </body>
+
+</html>

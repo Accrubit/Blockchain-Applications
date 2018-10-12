@@ -1,0 +1,24 @@
+pre, textarea {
+    margin: 10px 0px;
+    background:#282a36;
+    color:#f8f8f2;
+    width: 100%;
+}
+.notification {
+    margin-top: 10px;
+}
+.is-warning, .is-primary {
+    width: 100%;
+}
+section.hero-body {
+    padding: 25px;
+}
+.button {
+    margin-right: 5px;
+}
+input {
+    margin: 10px 0px;
+}
+body {
+    font-family: Roboto, 'Segoe UI', sans-serif;
+}
